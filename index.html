@@ -1,0 +1,38 @@
+---
+layout: primary-ru
+title: R.ORUJOV IP LAW OFFICE
+pageHeading: Защита интеллектуальной собственности в Азербайджане
+---
+
+    <!--MAIN CONTENTS-->
+    <main class="pageMainContents">
+        <!--ABOUT OFFICE INTRO-->
+        <section class="aboutOfficeIntro">
+            <div class="grid">
+                <div class="unit xs-1 aboutOfficeIntroContainer">
+                    <h2>О патентном офисе</h2>
+                    <!--<img src="http://placehold.it/200x200" alt="Бизнесмены в офисе">-->
+                    <p>Офис патентного поверенного "R.ORUJOV - IP Law Office" специализируется на защите интеллектуальной собственности
+                        в Азербайджане. Основными направлениями нашей деятельности являются оказание всех видов услуг по
+                        работе с патентами, товарными знаками, защите авторских прав и др. виды услуг, относящиеся к области
+                        интеллектуальной собственности.
+                    </p>
+                    <a href="#">Читать далее о патентном офисе <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+        <!--LATEST NEWS-->
+        <section class="grid latestNews">
+            <div class="unit xs-1">
+                <h2>Последние новости</h2>
+                <!--loops over posts, checks if russian, and shows up latest 3-->
+                {% for post in site.posts limit:3 %}
+                    {% if post.language == 'russian' %}
+                        <h3><a href="{{post.url}}">{{post.newsTitle}}</a></h3>
+                        <time datetime="{{post.date}}"><span>{{post.day}}</span>{{post.monthYear}}</time>
+                        <p><a href="{{post.url}}">{{post.excerpt}}</a></p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+    </main>

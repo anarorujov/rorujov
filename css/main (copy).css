@@ -1,0 +1,883 @@
+/*********************************************
+        GENERAL
+**********************************************/
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #674e3d;
+  color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #e9c6af; 
+}
+
+a:hover, a:active {
+    color: #c87137; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #e9c6af;
+    font-family: "Roboto Slab", Georgia, serif;
+    font-weight: 300;
+}
+
+/*********************************************
+        TYPOGRAPHY
+**********************************************/
+
+html {
+  font-size: 100%;
+  line-height: 1.4;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 38em) {
+    
+    html{
+        font-size: 110%;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    
+    html{
+        font-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 90em) {
+    
+    html{
+        font-size: 130%;
+    }
+}
+
+a {
+  background-color: transparent;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 1px;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-size: 100%;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn,
+caption {
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid;
+  height: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid;
+  text-align: left;
+}
+
+thead th {
+  vertical-align: bottom;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+blockquote,
+details,
+hr,
+fieldset,
+pre,
+table {
+  margin: 0 0 1.4rem;
+}
+
+.yotta {
+  font-size: 2.2807rem;
+  line-height: 3.1500rem;
+}
+
+.zetta {
+  font-size: 2.0273rem;
+  line-height: 2.8000rem;
+}
+
+h1,
+.exa {
+  font-size: 1.8020rem;
+  line-height: 2.4500rem;
+}
+
+h2,
+.peta {
+  font-size: 1.6018rem;
+  line-height: 2.1000rem;
+}
+
+h3,
+.tera {
+  font-size: 1.4238rem;
+  line-height: 2.1000rem;
+}
+
+h4,
+.giga {
+  font-size: 1.2656rem;
+  line-height: 1.7500rem;
+}
+
+h5,
+.mega {
+  font-size: 1.1250rem;
+  line-height: 1.7500rem;
+}
+
+h6,
+.kilo,
+input,
+textarea {
+  font-size: 1.0000rem;
+  line-height: 1.4000rem;
+}
+
+small,
+.milli {
+  font-size: 0.8889rem;
+  line-height: 1.4000rem;
+}
+
+.micro {
+  font-size: 0.7901rem;
+  line-height: 1.4000rem;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+ol {
+  padding-left: 1.6em;
+}
+
+td,
+th,
+fieldset {
+  padding: 0.3500rem;
+}
+
+
+/*********************************************
+        MAIN
+**********************************************/
+
+/* PAGE HEADER */
+
+.pageHeader {
+    background-color: #3A2618;
+    background-image: url("../img/books-law-balance-min.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+}
+
+
+@media only screen and (min-width: 75em) {
+
+/* push block underneath when screen becomes wider of max-width container 75rem (1200px) */
+    .pageHeader {
+        margin-bottom: 2.8rem;
+    }
+
+}
+
+/* TOP BAR */
+
+.topBar {
+    margin-bottom: 1.4rem;
+}
+
+.topBarLeftColumn {
+    padding: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (min-width: 25em) {
+    
+    .topBar {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    
+    .topBarLeftColumn {
+        padding-left: 1.4rem;
+        background-color: transparent;
+    }
+
+}
+
+@media only screen and (min-width: 60em) {
+ 
+    .topBar {
+        margin-bottom: 2.8rem;
+    }
+    
+}
+
+/* COMPANY LOGO */
+
+a.companyLogoLink {
+    color: #f2f2f2;
+}
+
+.companyLogoLink img {
+    display: inline-block;
+    margin-right: 0.35rem;
+    vertical-align: middle;
+}
+
+.companyLogoLink span {
+    font-size: 0.8889rem;
+    line-height: 1.4000rem;
+    color: #ccc;
+}
+
+/* NAVIGATION */
+
+nav {
+    /*background-color: #c87137;*/
+    text-align: center;
+}
+
+@media only screen and (min-width: 25em) {
+     
+     nav {
+         background-color: transparent;
+         text-align: right;
+     }
+           
+}
+
+/* hamburger menu button */
+
+.navMenuBtn {
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 0.35rem 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.7rem;
+}
+
+@media only screen and (min-width: 25em) {
+     
+    .navMenuBtn {
+        padding-right: 1.4rem;
+        margin: 0;
+        border: none;;
+    }
+           
+}
+
+.navMenuBtn:hover {
+    cursor: pointer;
+}
+
+
+@media only screen and (min-width: 60em) {
+    
+    .navMenuBtn {
+        display: none;
+    }
+        
+}
+
+/* small devices navigation menu style */
+
+.navMenuList,
+.navMenuSubList {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navMenuList {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: -250px;
+    background-color: #333;
+    text-align: left;
+    overflow-x: hidden;
+    padding-top: 2.8rem ;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.navMenuList a {
+    display: block;
+    font-size: 1.2656rem;
+    line-height: 1.7500rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    padding-left: 1.3rem;
+    text-align: left;
+    color: #e9c6af;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.navMenuSubList a {
+    font-size: 1.1250rem;
+    line-height: 1.7500rem;
+    padding-left: 2.8rem;
+}
+
+.navMenuList a:hover {
+    color: white;
+    background-color: #c87137;
+}
+
+.navMenuList a.current {
+    color: white;
+    background-color: #c87137;
+}
+
+.navCloseBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.25rem !important;
+    padding: 1.4rem !important;
+}
+
+/* large devices navigation menu style */
+
+@media only screen and (min-width: 60em) {
+    
+    .navMenuList {
+        position: relative;
+        top: initial;
+        left: initial !important;
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        padding-top: 0;
+        text-align: right;
+        overflow: visible;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+    }
+    
+    .navMenuList > li {
+        display: inline-block;
+    }
+    
+    .navMenuSubList {
+        display: none;
+    }
+    
+    .navMenuList a.navCloseBtn {
+        display: none;
+    }
+    
+    .navMenuList a {
+        display: block;
+        font-size: 1rem;
+        padding: 0.35rem 0.7rem;
+        text-align: left;
+        color: white;
+    }
+    
+    .navMenuSubList a {
+        font-size: 1rem;
+        padding-left: 0.7rem;
+        padding-right: 2.8rem;
+    }
+    
+    .navMenuList a:hover {
+        background-color: #c87137;
+    }
+    
+    .navMenuList li:hover .navMenuSubList {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        background-color: #333;
+    } 
+    
+}
+
+/* PAGE TITLE SECTION */
+
+.pageTitle {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+@media only screen and (min-width: 25em) {
+    
+    .pageTitle {
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+    }
+            
+}
+
+.pageTitle h1 {
+    font-weight: 300;
+}
+
+.pageTitle h2 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* SERVICES LISTS CAROUSEL */
+
+@media only screen and (min-width: 60em) {
+    
+    .servicesSlideGroup {
+        margin-bottom: 1.4rem;
+    }
+    
+}
+
+/* OPTIONAL MENU */
+
+.optionalMenu {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.optionalMenuItem:hover {
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+.optionalMenuItem {
+    padding: 1.4rem;
+}
+
+.optionalMenuItem a {
+    display: block;
+    text-align: center;
+}
+
+.optionalMenuItem a:first-child {
+    width: 77px;
+    height: 56px;
+    margin: 1.4rem auto 1.4rem;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.optionalMenuItem:hover a:first-child {
+    background-position: right center;
+}
+
+.optionalMenuItemIcon1 {
+    background-image: url("../img/hummer-eye-sprite.png");
+}
+
+.optionalMenuItemIcon2 {
+    background-image: url("../img/info-eye-sprite.png");
+}
+
+.optionalMenuItemIcon3 {
+    background-image: url("../img/money-download-sprite.png");
+}
+
+.optionalMenuItemIcon4 {
+    background-image: url("../img/document-download-sprite.png");
+}
+
+.optionalMenuItemHeading {
+    font-size: 1.2656rem;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+}
+
+
+a.optionalMenuItemDescription {
+    color: #f2f2f2;
+}
+
+a.optionalMenuItemDescription:hover {
+    color: #c87137;
+}
+
+/* PAGE MAIN CONTENTS */
+
+@media only screen and (min-width: 60em) {
+    
+    .pageMainContents {
+        margin-bottom: 1.4rem;
+    }
+}
+
+/* ABOUT OFFICE INTRO */
+
+.aboutOfficeIntro {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 1.4rem 0.7rem;
+    margin-bottom: 1.4rem;
+}
+
+@media only screen and (min-width: 25em) {
+    
+    .aboutOfficeIntro {
+        padding: 1.4rem;
+    }
+    
+}
+
+@media only screen and (min-width: 60em) {
+    
+    .aboutOfficeIntro {
+        margin-bottom: 2.4rem;
+    }
+    
+}
+
+.aboutOfficeIntro img {
+    display: none;
+}
+
+@media only screen and (min-width: 38em) {
+    
+    .aboutOfficeIntro img {
+        display: block;
+        float: left;
+        padding-right: 1.4rem;
+    }
+    
+}
+
+.aboutOfficeIntro p {
+    overflow: hidden;
+}
+
+/* LATEST NEWS */
+
+.latestNews > div {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+@media only screen and (min-width: 25em) {
+    
+    .latestNews > div {
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+    }
+    
+}
+
+.latestNews time {
+    display: block;
+    margin-bottom: 0.7rem;
+}
+
+.latestNews time span {
+    display: inline-block;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+    font-weight: bold;
+    margin-right: 0.7rem;
+    background-color: #e9c6af;
+    color: #674e3d;
+    border-radius: 2px;
+}
+
+/* PAGE FOOTER */
+
+/* MEMBERSHIP */
+
+.membership {
+    background-color: #D2CAC5;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    margin-bottom: 1.4rem;
+    text-align: center;
+}
+
+.membership a img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.membership a:first-child img {
+    width: 4.375rem; /*70px;*/
+    margin-right: 1.4rem;
+}
+
+.membership a:last-child img {
+    width: 7.5rem; /*120px;*/
+}
+
+/* GO UP LINK */
+
+.backToTop {
+    margin-bottom: 1.4rem;
+    padding-right: 0.7rem;
+    /*text-align: center;*/
+}
+
+@media only screen and (min-width: 25em) {
+    
+    .backToTop {
+        padding-right: 1.4rem;
+    }
+}
+
+.backToTop a {
+    display: block;
+    float: right;
+    font-size: 0.7901rem;
+    line-height: 1.4000rem;
+}
+
+.backToTop > a > i {
+    display: inline-block;
+    background-color: #e9c6af;
+    color: #674e3d;
+    padding: 0.35rem;
+    border-radius: 2px;
+}
+
+.backToTop > a:hover > i {
+    background-color: #c87137;;
+}
+
+/* COPYRIGHT */
+
+.copyright {
+    margin-bottom: 1.4rem;
+    text-align: center;
+    font-size: 0.7901rem;
+    line-height: 1.4000rem;
+}
+
+/*********************************************
+        LAYOUT SPACING
+**********************************************/  
+
+@media only screen and (min-width: 60em) {
+     
+     .grid {
+         max-width: 1200px; /* 1200px */
+         margin-left: auto;
+         margin-right: auto; 
+     }
+     
+}
+
+
+/*********************************************
+        ARTICLES
+**********************************************/
+
+/* PAGE HEADER */
+
+.articlePageHeader {
+    background-position: left center;
+    margin-bottom: 1.4rem;
+}
+
+
+@media only screen and (min-width: 60em) {
+
+    .articlePageHeader {
+        background-position: left center;
+        margin-bottom: 2.8rem;
+    }
+       
+    /* PAGE TITLE */
+    
+    .pageTitleHeading {
+        margin-bottom: 2.8rem;
+    }
+}
+
+/* CONTEXT MENU */
+
+.contextMenuList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contextMenuList li a {
+    display: block;
+    padding: 0.7rem 0;
+    border-bottom: 1px dashed #e9c6af;
+    /*border-left: 3px solid #c87137;
+    margin: 0.7rem 0;*/
+}
+
+.contextMenuList li:last-child a {
+    border-bottom: none;
+}
+
+/* ARTICLE */
+
+.articleMain span {
+    display: block;
+}
+
+.articleMain li,
+.articleMain span {
+    margin-bottom: 0.35rem;
+    margin-top: 0.35rem;
+}
+
+.articleMain ul {
+    margin-top: 0.35rem;
+}
+
+/* context menu and article spacing */
+
+article,
+.contextMenuContainer {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
+
+@media only screen and (min-width: 25em) {
+    article,
+    .contextMenuContainer {
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+    }   
+}
+
+/* CONTENTS LIST */
+
+.tableOfContentsList,
+.tableOfContentsSubList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tableOfContentsSubList li {
+    margin: 0.7rem 0;
+}
+
+.tableOfContentsSubList > li > i {
+    display: block;
+    float: left;  
+    margin-right: 0.35rem;
+    color: transparent;
+}
+
+.tableOfContentsSubList > li:hover i {
+    color: #c87137;
+}
+
+.tableOfContentsSubList > li > a {
+    display: block;
+    overflow: hidden;
+}
+
+.backToTableOfContentsLink {
+    display: block;
+    margin-bottom: 1.4rem;
+} 
+
+@media only screen and (min-width: 60em) {
+
+    .tableOfContentsList {
+        margin-bottom: 2.8rem;
+    }
+    
+    .backToTableOfContentsLink {
+        margin-left: 1.4rem;
+        float: right;
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 25em) {
+    
+}
+
+@media only screen and (min-width: 38em) {
+    
+}
+
+@media only screen and (min-width: 60em) {
+     
+}

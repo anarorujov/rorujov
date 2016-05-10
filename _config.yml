@@ -1,0 +1,9 @@
+baseurl: /planets-of-the-universe
+exclude: ['README.md']
+permalink: pretty
+defaults:
+  -
+    scope:
+      path: "ru"
+    values:
+      layout: "primary-ru"

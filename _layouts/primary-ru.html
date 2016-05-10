@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>R.ORUJOV IP LAW OFFICE · {{page.pageHeading}} · Баку, Азербайджан</title>
+    <meta name="description" content="">
+    <meta name="handheldfriendly" content="true">
+    <meta name="mobileoptimized" content="240">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
+    <!--STYLES-->
+    <link rel="stylesheet" href="{{site.baseurl}}/css/normalize.min.css">
+    {% if page.url == '/' %}
+    <link rel="stylesheet" href="{{site.baseurl}}/css/slick.css" />
+    {% endif %}
+    <link rel="stylesheet" href="{{site.baseurl}}/css/grid.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <!--FONTS-->
+    <link rel="stylesheet" href="{{site.baseurl}}/css/font-awesome.min.css">
+
+    <!--[if lt IE 9]>
+            <script src="js/vendor/html5shiv.js"></script>
+        <![endif]-->
+</head>
+
+<body id="pageBody">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!--PAGE HEADER-->
+    <header class="pageHeader {{page.pageHeaderTagClass}}">
+        <!--TOP BAR-->
+        <div class="topBar">
+            <div class="grid grid-middle">
+                <!--COMPANY LOGO-->
+                <div class="unit xs-1 s-3-4 m-1-2 l-1-3 topBarLeftColumn">
+                    <a href="{{site.baseurl}}/" class="companyLogoLink">
+                        <img src="{{site.baseurl}}/img/sops-logo.png" alt="Графическая часть логотипа"> R.ORUJOV <span>IP LAW OFFICE</span>
+                    </a>
+                </div>
+                <!--NAVIGATION-->
+                <nav class="unit xs-1 s-1-4 m-1-2 l-2-3">
+                    <!--hamburger menu button-->
+                    <span class="navMenuBtn" onclick="openNav()"><i class="fa fa-bars"></i> МЕНЮ</span>
+                    <!--navigation menu list-->
+                    <ul id="sideNav" class="navMenuList">
+                        <li><a href="#">Информация <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            <ul class="navMenuSubList">
+                                <li><a {% if page.url contains 'law' %} class="current" {% endif %} href="{{site.baseurl}}/ru/patent-law/">Законы</a></li>
+                                <!--<li><a {% if page.url == '/ru/rules/' %} class="current" {% endif %} href="{{site.baseurl}}/ru/rules/">Правила</a></li>-->
+                                <li><a {% if page.url contains 'filing' %} class="current" {% endif %} href="{{site.baseurl}}/ru/patent-application-filing/">Подача заявок</a></li>
+                                <li><a {% if page.url == '/ru/download/' %} class="current" {% endif %} href="{{site.baseurl}}/ru/download/">Пошлины</a></li>
+                                <li><a {% if page.url == '/ru/download/' %} class="current" {% endif %} href="{{site.baseurl}}/ru/download/">Доверенность</a></li>
+                                <!--<li><a {% if page.url == '/ru/services/' %} class="current" {% endif %} href="{{site.baseurl}}/ru/services/">Услуги</a></li>-->
+                            </ul>
+                        </li>
+                        <li><a {% if page.url == '/ru/news/' %} class="current" {% endif %} href="{{site.baseurl}}/ru/news/">Новости</a></li>
+                        <li><a {% if page.url == '/ru/about/' %} class="current" {% endif %} href="{{site.baseurl}}/ru/about/">Об офисе</a></li>
+                        <li><a {% if page.url == '/' %} class="current" {% endif %} href="{{site.baseurl}}/">Главная</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="javascript:void(0)" class="navCloseBtn" onclick="closeNav()">&times;</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--PAGE TITLE-->
+        <div class="grid pageTitle">
+            <div class="unit xs-1 l-2-3">
+                <h1>{{page.pageHeading}}</h1>
+                {% if pageAnnotation %}
+                    <p>{{page.pageAnnotation}}</p>
+                {% endif %}
+                <!--loads carousel snippet for home page-->
+                {% if page.url == '/' %}
+                    <h2>Офис патентного поверенного Руфата Оруджева</h2>
+                    {% include services-lists-carousel-ru.html %}
+                {% endif %}
+            </div>
+        </div>
+        <!--loads optional menu snippet for home page-->
+        {% if page.url == '/' %}
+            {% include optional-menu-ru.html %}
+        {% endif %}
+    </header>
+    
+    {{content}}
+    
+    <!--PAGE FOOTER-->
+    <footer>
+        <!--GO UP LINK-->
+        <div class="grid">
+            <div class="unit xs-1 backToTop">
+                <a href="#pageBody">в верх страницы <i class="fa fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <!--MEMBERSHIP-->
+        <div class="membership">
+            <a href="http://www.justinianlawyers.com/" target="blank"><img src="{{site.baseurl}}/img/aea-logo.png" alt="Логотип AEA - International Lawyers Network"></a>
+            <a href="http://www.aeuropea.com/" target="blank"><img src="{{site.baseurl}}/img/justinian-logo.png" alt="Логотип JL - Justinian Lawyers"></a>
+        </div>
+        <!--COPYRIGHT-->
+        <div class="grid">
+            <div class="unit xs-1 copyright">&copy R.ORUJOV IP LAW OFFICE - <a href="http://rorujov.az">rorujov.az</a></div>
+        </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="{{site.baseurl}}/js/vendor/jquery-1.12.3.min.js"></script>
+    {% if page.url == '/' %}
+        <script src="{{site.baseurl}}/js/vendor/slick.min.js"></script>
+    {% endif %}
+    <script src="{{site.baseurl}}/js/plugins.js"></script>
+    <script src="{{site.baseurl}}/js/main.js"></script>
+
+</body>
+
+</html>

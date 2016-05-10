@@ -1,0 +1,29 @@
+---
+pageHeading: Новости
+pageHeaderTagClass: articlePageHeader
+---
+
+<!--PAGE MAIN CONTENTS-->
+<main class="pageMainContents">
+    <div class="grid">
+
+        <!--ASIDE-->
+        <aside class="unit xs-1 l-1-4 contextMenuContainer">
+            <img src="http://placehold.it/200" alt="">
+        </aside>
+
+        <!--NEWS-->
+        <section class="unit xs-1 l-3-4 news">
+           
+        <!--loops over all posts, checks for language, and shows up all russian-->
+        {% for post in site.posts %}
+            {% if post.language == 'russian' %}
+                <h3><a href="{{post.url}}">{{post.newsTitle}}</a></h3>
+                <time datetime="{{post.date}}"><span>{{post.day}}</span>{{post.monthYear}}</time>
+                <p><a href="{{post.url}}">{{post.excerpt}}</a></p>
+            {% endif %}
+        {% endfor %}
+   
+        </section>
+    </div>
+</main>
