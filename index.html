@@ -17,7 +17,7 @@ pageHeading: Защита интеллектуальной собственно�
                         работе с патентами, товарными знаками, защите авторских прав и др. виды услуг, относящиеся к области
                         интеллектуальной собственности.
                     </p>
-                    <a href="#">Читать далее о патентном офисе <i class="fa fa-long-arrow-right"></i></a>
+                    <a href="{{site.baseurl}}/ru/about/">Читать далее о патентном офисе <i class="fa fa-long-arrow-right"></i></a>
                 </div>
             </div>
         </section>
@@ -28,9 +28,9 @@ pageHeading: Защита интеллектуальной собственно�
                 <!--loops over posts, checks if russian, and shows up latest 3-->
                 {% for post in site.posts limit:3 %}
                     {% if post.language == 'russian' %}
-                        <h3><a href="{{post.url}}">{{post.newsTitle}}</a></h3>
+                        <h3><a href="{{site.baseurl}}/{{post.url}}">{{post.newsTitle}}</a></h3>
                         <time datetime="{{post.date}}"><span>{{post.day}}</span>{{post.monthYear}}</time>
-                        <p><a href="{{post.url}}">{{post.excerpt}}</a></p>
+                        <p><a href="{{site.baseurl}}/{{post.url}}">{{post.excerpt}}</a></p>
                     {% endif %}
                 {% endfor %}
             </div>

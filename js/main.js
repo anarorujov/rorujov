@@ -11,25 +11,15 @@ function closeNav() {
     document.getElementById("sideNav").style.left = "-250px";
 }
 
-// matchHeight. Home page equal height call function
-    
-// $(function() {
-//     $('.featuredItemCard_head').matchHeight();
-// });
-
-// $(function() {
-//     $('.featuredItemCard_body_text').matchHeight();
-// });
-
-
 // Slick carousel options
 
-$('.servicesSlideGroup').slick({
-  autoplay: true,
-  dots: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  arrows: false
-});
+    $('.servicesSlideGroup').slick({
+    autoplay: true,
+    autoplaySpeed: 6000,
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    arrows: false
+    });
