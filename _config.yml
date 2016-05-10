@@ -1,4 +1,4 @@
-baseurl: /planets-of-the-universe
+baseurl: /rorujov
 exclude: ['README.md']
 permalink: pretty
 defaults:
