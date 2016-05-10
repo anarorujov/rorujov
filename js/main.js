@@ -25,7 +25,7 @@ function closeNav() {
 // Slick carousel options
 
 $('.servicesSlideGroup').slick({
-  autoplay: false,
+  autoplay: true,
   dots: false,
   infinite: true,
   speed: 300,
