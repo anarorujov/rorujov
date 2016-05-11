@@ -592,7 +592,7 @@ a.optionalMenuItemDescription:hover {
     background-image: url("../img/case-bg.png");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: contain;
+    background-size: auto 100%;
 }
 
 
@@ -645,7 +645,10 @@ a.optionalMenuItemDescription:hover {
 
 .latestNewsIcon {
     display: block;
-    margin-bottom: 1.4rem;
+}
+
+.latestNews .btn {
+    margin: 1.4rem 0;
 }
 
 .latestNews > div {
