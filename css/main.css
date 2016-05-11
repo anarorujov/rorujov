@@ -665,6 +665,14 @@ a.optionalMenuItemDescription:hover {
     }
 }
 
+
+@media only screen and (min-width: 60em) {
+    
+    .latestNews {
+        margin-bottom: 1.4rem;
+    }
+}
+
 .latestNews time,
 .news time {
     display: block;
@@ -681,6 +689,65 @@ a.optionalMenuItemDescription:hover {
     background-color: #e9c6af;
     color: #674e3d;
     border-radius: 2px;
+}
+
+/* CONTACTS */
+
+.contact {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 1.4rem 0.7rem;
+}
+
+@media only screen and (min-width: 25em) {
+    
+    .contact {
+        background-color: rgba(255, 255, 255, 0.08);
+        padding: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 60em) {
+    
+    .contact {
+        background-color: rgba(255, 255, 255, 0.08);
+        padding: 2.8rem 1.4rem 1.4rem;
+    }
+}
+
+.contactForm,
+.contactForm > * {
+    display: block;
+    width: 100%;
+}
+
+#name,
+#email,
+#message {
+    color: #333;
+    background-color: #ccc;
+    border: none;
+    padding: 0.35rem;
+    border-radius: 2px;
+}
+
+#message {
+    height: 12.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.contactForm label {
+    margin-top: 0.7rem;
+    margin-bottom: 0.35rem;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    border: none;
+    width: initial;
+    padding: 0.35rem 1.4rem;
+    background-color: #c87137;
 }
 
 /* PAGE FOOTER */
