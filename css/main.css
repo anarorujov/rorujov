@@ -235,6 +235,21 @@ fieldset {
 
 
 /*********************************************
+        MODULES
+**********************************************/
+
+.btn {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.35rem 0.7rem;
+}
+
+.btnHollow {
+    background: transparent;
+    border: 1px solid #e9c6af;
+}
+
+/*********************************************
         MAIN
 **********************************************/
 
@@ -628,6 +643,11 @@ a.optionalMenuItemDescription:hover {
 
 /* LATEST NEWS */
 
+.latestNewsIcon {
+    display: block;
+    margin-bottom: 1.4rem;
+}
+
 .latestNews > div {
     padding-left: 0.7rem;
     padding-right: 0.7rem;
@@ -838,7 +858,7 @@ article,
     padding-left: 0;
 }
 
-.tableOfContentsSubList li {
+.tableOfContentsList li {
     margin: 0.7rem 0;
 }
 

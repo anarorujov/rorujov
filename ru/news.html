@@ -9,7 +9,7 @@ pageHeaderTagClass: articlePageHeader
 
         <!--ASIDE-->
         <aside class="unit xs-1 l-1-4 contextMenuContainer">
-            <img src="http://placehold.it/200" alt="">
+            <img src="{{site.baseurl}}/img/news-icon.png" alt="Изображение газеты" class="latestNewsIcon">
         </aside>
 
         <!--NEWS-->
@@ -18,9 +18,9 @@ pageHeaderTagClass: articlePageHeader
         <!--loops over all posts, checks for language, and shows up all russian-->
         {% for post in site.posts %}
             {% if post.language == 'russian' %}
-                <h3><a href="{{post.url}}">{{post.newsTitle}}</a></h3>
+                <h3>{{post.newsTitle}}</h3>
                 <time datetime="{{post.date}}"><span>{{post.day}}</span>{{post.monthYear}}</time>
-                <p><a href="{{post.url}}">{{post.excerpt}}</a></p>
+                <p>{{post.content}}</p>
             {% endif %}
         {% endfor %}
    

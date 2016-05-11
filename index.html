@@ -23,8 +23,12 @@ pageHeading: Защита интеллектуальной собственно�
         </section>
         <!--LATEST NEWS-->
         <section class="grid latestNews">
-            <div class="unit xs-1">
+            <div class="unit xs-1 l-1-4">
                 <h2>Последние новости</h2>
+                <img src="{{site.baseurl}}/img/news-icon.png" alt="Изображение газеты" class="latestNewsIcon">
+                <a href="{{site.baseurl}}/ru/news/" class="btn btnHollow">Все новости</a>
+            </div>
+            <div class="unit xs-1 l-3-4">
                 <!--loops over posts, checks if russian, and shows up latest 3-->
                 {% for post in site.posts limit:3 %}
                     {% if post.language == 'russian' %}

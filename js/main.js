@@ -13,13 +13,12 @@ function closeNav() {
 
 // Slick carousel options
 
-    $('.servicesSlideGroup').slick({
+$('.servicesSlideGroup').slick({
     autoplay: true,
     autoplaySpeed: 6000,
     dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 1,
-    adaptiveHeight: true,
-    arrows: false
-    });
+    arrows: false,
+});
