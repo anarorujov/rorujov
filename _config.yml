@@ -1,4 +1,4 @@
-baseurl: rorujov.az
+baseurl: http://rorujov.az
 exclude: ['README.md']
 permalink: pretty
 defaults:
