@@ -710,7 +710,7 @@ a.optionalMenuItemDescription:hover {
     
     .contact {
         background-color: rgba(255, 255, 255, 0.08);
-        padding: 2.8rem 1.4rem 1.4rem;
+        padding: 2.8rem 1.4rem;
     }
 }
 
@@ -718,16 +718,24 @@ a.optionalMenuItemDescription:hover {
 .contactForm > * {
     display: block;
     width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
 }
 
 #name,
 #email,
 #message {
     color: #333;
-    background-color: #ccc;
-    border: none;
+    background: transparent;
+    border: 1px solid #e9c6af;
     padding: 0.35rem;
     border-radius: 2px;
+}
+
+#name:focus,
+#email:focus,
+#message:focus {
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
 #message {
@@ -742,12 +750,28 @@ a.optionalMenuItemDescription:hover {
 
 input[type="submit"] {
     display: inline-block;
-    -webkit-appearance: none;
-    -moz-appearance:    none;
     border: none;
     width: initial;
     padding: 0.35rem 1.4rem;
     background-color: #c87137;
+}
+
+/* contact details */
+
+
+.contactDetailsList,
+.contactDetailsList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contactDetailsList {
+    margin-left: 10%;
+}
+
+.contactDetailsList span {
+    font-weight: bold;
+    line-height: 2.8rem;
 }
 
 /* PAGE FOOTER */
@@ -779,8 +803,9 @@ input[type="submit"] {
 /* GO UP LINK */
 
 .backToTop {
-    margin-bottom: 1.4rem;
+    padding-bottom: 1.4rem;
     padding-right: 0.7rem;
+    /*background-color: rgba(255, 255, 255, 0.08);*/
 }
 
 @media only screen and (min-width: 25em) {
