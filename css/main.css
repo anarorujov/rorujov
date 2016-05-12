@@ -697,21 +697,24 @@ a.optionalMenuItemDescription:hover {
 
 .contact {
     background-color: rgba(255, 255, 255, 0.08);
+}
+
+.contact .grid {
     padding: 1.4rem 0.7rem;
 }
 
 @media only screen and (min-width: 25em) {
     
-    .contact {
-        background-color: rgba(255, 255, 255, 0.08);
+    .contact .grid {
+        /*background-color: rgba(255, 255, 255, 0.08);*/
         padding: 1.4rem;
     }
 }
 
 @media only screen and (min-width: 60em) {
     
-    .contact {
-        background-color: rgba(255, 255, 255, 0.08);
+    .contact .grid {
+        /*background-color: rgba(255, 255, 255, 0.08);*/
         padding: 2.8rem 1.4rem;
     }
 }
