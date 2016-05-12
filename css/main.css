@@ -38,11 +38,7 @@ a:hover, a:active {
     color: #c87137; 
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #e9c6af;
-    font-family: "Roboto Slab", Georgia, serif;
-    font-weight: 300;
-}
+
 
 /*********************************************
         TYPOGRAPHY
@@ -73,6 +69,12 @@ html {
     html{
         font-size: 130%;
     }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #e9c6af;
+    font-family: "Roboto Slab", Georgia, serif;
+    font-weight: 300;
 }
 
 a {
